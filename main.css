@@ -2,4 +2,10 @@ h1 {
     font-family: "Comic Sans MS";
     color: hotpink;
     font-size: 50px;
+    text-align: center;
+}
+
+body {
+    background-image: url(./img/background.png);
+    background-size: auto;
 }
