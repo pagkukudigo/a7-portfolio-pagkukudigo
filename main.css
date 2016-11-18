@@ -10,7 +10,7 @@ body {
     background-size: auto;
 }
 
-#about {
+.about {
     background-color: antiquewhite;
     font-family: "Trebuchet MS";
     text-align: center;
