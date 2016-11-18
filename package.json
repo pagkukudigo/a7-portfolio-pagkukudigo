@@ -1,0 +1,26 @@
+{
+  "name": "pagkukudigo.github.io",
+  "version": "1.0.0",
+  "description": "INFO 343 Portfolio",
+  "main": "index.js",
+  "dependencies": {
+    "jquery": "^3.1.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pagkukudigo/pagkukudigo.github.io.git"
+  },
+  "author": "Saralyn Santos",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pagkukudigo/pagkukudigo.github.io/issues"
+  },
+  "homepage": "https://github.com/pagkukudigo/pagkukudigo.github.io#readme"
+}

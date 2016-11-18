@@ -9,3 +9,10 @@ body {
     background-image: url(./img/background.png);
     background-size: auto;
 }
+
+#about {
+    background-color: antiquewhite;
+    font-family: "Trebuchet MS";
+    text-align: center;
+    font-size: 25px;
+}
