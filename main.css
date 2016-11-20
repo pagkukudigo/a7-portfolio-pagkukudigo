@@ -11,9 +11,8 @@ body {
 }
 
 .about {
-    background-color: gainsboro;
+    background-color: antiquewhite;
     font-family: "Trebuchet MS";
     text-align: center;
     font-size: 25px;
-    margin: auto;
 }
