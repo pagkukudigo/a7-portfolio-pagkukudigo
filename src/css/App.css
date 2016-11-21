@@ -1,0 +1,28 @@
+.App {
+  text-align: center;
+}
+
+.active {
+    color: #552B72;
+}
+
+a {
+    color: #060213;
+}
+
+.navbar {
+    background-color: #B4A7E5;
+    font-size: 25px;
+    padding: 5px;
+}
+
+.link {
+    margin: 5px;
+    padding: 5px;
+    font-family: "Calibri";
+}
+
+body {
+    background-image: url(../img/background.png);
+    background-size: auto;
+}

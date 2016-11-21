@@ -1,12 +1,11 @@
 import React from 'react';
+import './css/Contact.css';
 
-// PageOne Component
 var Contact = React.createClass({
-	// Render a <Quote> element for each element in the state
 	render() {
 		return (
-			<div>Page one!
-
+			<div className="contact">
+                <a href="https://www.linkedin.com/in/saralynsantos" className="contactLink">LinkedIn</a> | <a href="mailto:saralyns@uw.edu" className="contactLink">Email</a>
 			</div>
 		);
 	}
