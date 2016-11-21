@@ -21,7 +21,7 @@ var ProjectCard = React.createClass({
 var Projects = React.createClass({
     getInitialState:function() {
         return {
-            projectArray: []
+            projectArray: {data}
         }
     },
     
