@@ -25,6 +25,7 @@ var Contact = React.createClass({
                     <a href="https://www.linkedin.com/in/saralynsantos"><img src={linkedin} alt="LinkedIn logo" /></a>
                     <a href="mailto:saralyns@uw.edu"><img src={email} alt="email logo" height="108"/></a>
                 </div>
+                <p>I hope to hear from you soon!</p>
 			</div>
 		);
 	}
