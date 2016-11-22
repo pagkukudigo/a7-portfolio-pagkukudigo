@@ -11,7 +11,9 @@ var HomePage = React.createClass({
                     <div>
                         Welcome to my portfolio!
                         <br/>
-                        This is a collection of all the work I did and everything I learned in INFO 343 over Autumn Quarter 2016. Click the links above to navigate around.
+                        This is a collection of all the work I did and everything I learned in INFO 343 over Autumn Quarter 2016. 
+                        <br/>
+                        Click the links above to navigate around.
                         <br/>
                         Thanks for visiting!</div>
                 </div>

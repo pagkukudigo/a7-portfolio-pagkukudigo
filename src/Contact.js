@@ -3,18 +3,6 @@ import './css/Contact.css';
 import '../node_modules/font-awesome/css/font-awesome.css';
 import linkedin from './img/linkedin.png';
 import email from './img/email.png';
-/* import Firebase from 'firebase';
-import $ from 'jquery';
-
-
-var firebase = require('firebase');
-var app = firebase.initializeApp({
-    apiKey: "AIzaSyDdYzrLeY5Qj7aRdL089ZHy4TKAKE8jYFk",
-    authDomain: "portfolio-14c2b.firebaseapp.com",
-    databaseURL: "https://portfolio-14c2b.firebaseio.com",
-    storageBucket: "portfolio-14c2b.appspot.com",
-    messagingSenderId: "787672924537"
-}); */
 
 var Contact = React.createClass({
     render() {

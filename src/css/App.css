@@ -44,3 +44,7 @@ body {
     background-color: #B4A7E5;
     padding: 5px;
 }
+
+.footer {
+    font-family: monospace;
+}
