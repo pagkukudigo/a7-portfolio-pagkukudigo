@@ -20,7 +20,7 @@ var Contact = React.createClass({
     render() {
 		return (
 			<div className="container">
-                <h1>Contact Me</h1>
+                <h2>Contact Me</h2>
                 <p>If you would like to get in contact with me, you can get in touch with me via the following locations:</p>   
                 <div className="row links">
                     <a href="https://www.linkedin.com/in/saralynsantos"><img src={linkedin} alt="LinkedIn logo" /></a>

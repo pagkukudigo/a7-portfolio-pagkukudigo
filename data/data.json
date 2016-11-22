@@ -1,5 +1,5 @@
 {
-  "assignments": {
+  "assignments": [
     {
       "url" : "http://students.washington.edu/saralyns/info343/a1-git-started-pagkukudigo/",
       "title" : "Assignment 1: Maya Fey",
@@ -30,5 +30,5 @@
       "description" : "An app that gives users Broadway tunes to listen to depending on their mood.",
       "image" : "https://firebasestorage.googleapis.com/v0/b/portfolio-14c2b.appspot.com/o/a5.png?alt=media&token=779d075c-8252-4dd1-bd8d-6ceac41a8dff"
     }
-  }
+  ]
 }
