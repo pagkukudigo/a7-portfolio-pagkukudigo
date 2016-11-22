@@ -1,20 +1,19 @@
 import React from 'react';
-import $ from 'jquery';
-import Baby from 'babyparse';
-// import projectData from '../data/data.csv';
+import './css/Projects.css';
 
 var ProjectCard = React.createClass({
     render() {
 		return (
-			<div className="card medium col s12 m6 l4">
+			<div className="card large col s12 m6 l6">
                 <div className="card-image">
                     <img src={this.props.data.image} alt="project"></img>
                 </div>
                 <div className="card-content">       
-                    {this.props.data.name}<br></br>{this.props.data.description}
+                    <p className="title">{this.props.data.title}</p>
+                    <p>{this.props.data.description}</p>
                 </div>
                 <div className="card-action">
-                    <a href={this.props.data.url}>VIEW HERE</a>
+                    <a href={this.props.data.url}>VIEW PROJECT HERE</a>
                 </div>
             </div>
 		);
@@ -30,20 +29,19 @@ var Projects = React.createClass({
     }, 
 
     componentDidMount() {
-        // console.log(this.state.projectArray);
-        $.get('../data/data.json').then(function(data) {
-            console.log(data.assignments);
-            this.setState({projectArray:data.assignments}); 
-        }.bind(this));
+        var customData = require('../data/data.json');
+        console.log(customData.assignments);
+        this.setState({projectArray:customData.assignments});
         console.log(this.state.projectArray);
     },
  
     render:function() {
         return (
             <div className="container">
+                <h2>Projects</h2>
+                <p>A collection of all the projects I did over the course of INFO 343.</p>
                 <div className="row">
                     {this.state.projectArray.map(function(d, i) {
-                        console.log({d});
                         return <ProjectCard key={'project' + i} data={d} />
                     })}
                 </div>
