@@ -1,7 +1,17 @@
 .home {
-    background-color: #A5B8E3;
+    background-color: #B4A7E5;
     padding: 10px 5px;
     margin-top: 10px;
-    border: 2px solid #A5B8E3;
     border-radius: 10px;
+    font-family: "Calibri";
+    font-size: 15px;
+}
+
+h2 {
+    font-family: monospace;
+    margin: 5px;
+}
+
+h3 {
+    font-family: monospace;
 }

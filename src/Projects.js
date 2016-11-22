@@ -1,11 +1,12 @@
 import React from 'react';
+import $ from 'jquery';
 
 var ProjectCard = React.createClass({
     render() {
 		return (
 			<div className="card medium col s12 m6 l4">
                 <div className="card-image">
-                    <img src={this.props.data.album.images[0].url} alt="project"></img>
+                    <img src={this.props.data.image} alt="project"></img>
                 </div>
                 <div className="card-content">       
                     {this.props.data.name}<br></br>
@@ -21,18 +22,27 @@ var ProjectCard = React.createClass({
 var Projects = React.createClass({
     getInitialState:function() {
         return {
-            projectArray: {data}
+            projectArray: []
         }
     },
-    
+
+    componentDidMount() {
+      $.get('../data/data.json').then(function(data) {
+            console.log(data.assignments);
+            this.setState({projectArray: data.assignments});    
+      }.bind(this));
+      console.log("array: ");
+      console.log(this.state.projectArray);
+    },
+ 
     render:function() {
         return (
-            <div>
+            <div className="row">
                 {this.state.projectArray.map(function(d, i) {
-                    return <ProjectCard key={'project'+i} data={d}/>
+                    console.log({d});
+                    return <ProjectCard key={'project' + i} data={d} />
                 })}
-            </div>
-            
+            </div>    
         )
     }
     

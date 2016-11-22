@@ -7,6 +7,7 @@ class App extends Component {
   render() {
     return (
         <div className="App">
+            <div className="header"></div>
             <div className="navbar">
                 <Link className="link" activeClassName='active' to="/"><i className="fa fa-home"></i></Link> 
                 <Link className="link" activeClassName='active' to="/projects">Projects</Link> 
@@ -15,6 +16,9 @@ class App extends Component {
             </div>
             <div className="children">
                 {this.props.children}
+            </div>
+            <div className="footer">
+                <p>&copy; Saralyn Santos, Autumn 2016</p>
             </div>
         </div>
     );
