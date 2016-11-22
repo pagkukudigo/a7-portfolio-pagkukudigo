@@ -1,5 +1,7 @@
 import React from 'react';
 import $ from 'jquery';
+import Baby from 'babyparse';
+// import projectData from '../data/data.csv';
 
 var ProjectCard = React.createClass({
     render() {
@@ -9,10 +11,10 @@ var ProjectCard = React.createClass({
                     <img src={this.props.data.image} alt="project"></img>
                 </div>
                 <div className="card-content">       
-                    {this.props.data.name}<br></br>
+                    {this.props.data.name}<br></br>{this.props.data.description}
                 </div>
                 <div className="card-action">
-                    <a href={this.props.data.external_urls.spotify}>VIEW HERE</a>
+                    <a href={this.props.data.url}>VIEW HERE</a>
                 </div>
             </div>
 		);
@@ -20,28 +22,31 @@ var ProjectCard = React.createClass({
 });
 
 var Projects = React.createClass({
+    
     getInitialState:function() {
         return {
             projectArray: []
         }
-    },
+    }, 
 
     componentDidMount() {
-      $.get('../data/data.json').then(function(data) {
+        // console.log(this.state.projectArray);
+        $.get('../data/data.json').then(function(data) {
             console.log(data.assignments);
-            this.setState({projectArray: data.assignments});    
-      }.bind(this));
-      console.log("array: ");
-      console.log(this.state.projectArray);
+            this.setState({projectArray:data.assignments}); 
+        }.bind(this));
+        console.log(this.state.projectArray);
     },
  
     render:function() {
         return (
-            <div className="row">
-                {this.state.projectArray.map(function(d, i) {
-                    console.log({d});
-                    return <ProjectCard key={'project' + i} data={d} />
-                })}
+            <div className="container">
+                <div className="row">
+                    {this.state.projectArray.map(function(d, i) {
+                        console.log({d});
+                        return <ProjectCard key={'project' + i} data={d} />
+                    })}
+                </div>
             </div>    
         )
     }

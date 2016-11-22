@@ -5,12 +5,13 @@
 
 .container {
     margin: 10px auto;
-    background-color: #A6B6E3;
-    border: 1px solid #A6B6E3;
+    background-color: #B4A7E5;
     border-radius: 10px;
     padding: 10px;
+    font-family: "Calibri";
+    font-size: 18px;
 }
 
-a {
+h1 {
     margin: 5px;
 }
